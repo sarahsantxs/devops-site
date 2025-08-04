@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  app:
+    image: sarahsantxs/devops-site-app:latest
+    ports:
+      - "8080:80"   # Mapeia porta 80 do container para a 8080 da máquina local
+    restart: unless-stopped
